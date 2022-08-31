@@ -1,0 +1,73 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    background-color: transparent;
+}
+
+h1 {
+    text-align: center;
+    position: absolute;
+    top: 115px;
+    left: 700px;
+    z-index: -1;
+
+}
+
+.main:hover>.red-box {
+    transform: rotate(90deg);
+    transform-origin: left top;
+    transition-duration: 2s;
+}
+
+.main:hover>.yellow-box {
+    transform: rotate(-90deg);
+    transform-origin: right top;
+    transition-duration: 2s;
+}
+
+.main:hover>.blue-box {
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+    transition-duration: 2s;
+}
+
+.main:hover>.green-box {
+    transform: rotate(90deg);
+    transform-origin: right bottom;
+    transition-duration: 2s;
+}
+
+.red-box {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    transform-origin: left top;
+    transition-duration: 2s;
+}
+
+.yellow-box {
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+    transform-origin: right top;
+    transition-duration: 2s;
+}
+
+.blue-box {
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    transform-origin: left bottom;
+    transition-duration: 2s;
+}
+
+.green-box {
+    height: 150px;
+    width: 150px;
+    background-color: green;
+    transform-origin: right bottom;
+    transition-duration: 2s;
+}
